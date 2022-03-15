@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <p>Click the button to demostrate the prompt box.</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
         <script>
-            alert("Tài Liệu Học Lập trình Web");
+            function myFunction(){
+                var person = prompt("Please enter your name", "Harry Potter");
+                if(person != null){
+                    document.getElementById("demo").innerHTML="Hello" + person + "! How are you to day?";
+                }
+            }
         </script>
     </body>
 </html>
